@@ -4,7 +4,11 @@
 
 ## 🎯 Why would you use it?
 
-Since React Native doesn't use CSS (especially [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors)), there's no convenient way to hide a container when its children are not rendered. This happens quite often, and usually requires adding extra conditions for rendering the container, besides the conditions for its children. This `View` wrapper component solves this problem.
+Since React Native doesn't use CSS (especially [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors)), there's no convenient way to hide a container when its children are not rendered. This happens quite often, and usually requires adding extra conditions for rendering the container, besides the conditions for its children.
+
+The primary motivation is to avoid rendering unnecessary or empty components in the component tree, which can sometimes lead to layout issues or simply be inefficient.
+
+This `View` wrapper component solves this problem.
 
 Now, instead of
 
@@ -30,7 +34,7 @@ you can do
 </NonEmptyView>
 ```
 
-The `NonEmptyView` component will be removed from the tree if its children are _empty_. Nested `NonEmptyView` components will also be taken into account 🚀
+The `NonEmptyView` component will be removed from the tree if its children are _empty_ (e.g., null, undefined, empty arrays, or components that render null). Nested `NonEmptyView` components will also be taken into account 🚀
 
 ## 🧑🏻‍💻 Installation
 
