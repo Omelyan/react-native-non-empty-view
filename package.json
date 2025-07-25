@@ -1,6 +1,6 @@
 {
   "name": "react-native-non-empty-view",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native View wrapper that renders only if it has a content 🫧",
   "main": "lib/index.js",
   "module": "lib/index.js",
