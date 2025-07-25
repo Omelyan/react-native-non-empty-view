@@ -1,0 +1,50 @@
+{
+  "name": "react-native-non-empty-view",
+  "version": "0.1.0",
+  "description": "React Native View wrapper that renders only if it has a content 🫧",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omelyan/react-native-non-empty-view.git"
+  },
+  "keywords": [
+    "react-native",
+    "conditional-rendering",
+    "non-empty",
+    "view",
+    "area",
+    "block"
+  ],
+  "author": "Omelyan (https://codepen.io/Omelyan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Omelyan/react-native-non-empty-view/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "release": "rm -rf lib && yarn build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.3.1",
+    "@types/react-native": "^0.73.0"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "peerDependenciesMeta": {
+    "@types/react-native": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    }
+  }
+}
