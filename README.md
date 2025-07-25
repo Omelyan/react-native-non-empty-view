@@ -64,14 +64,12 @@ and use it like the default `View`.
 
 `NonEmptyView` inherits all properties from `View` with a few additional ones.
 
-## Properties
+### Properties
 
-`renderBefore` → `ReactNode`: Renders before the content if the content exists.
-
-`renderAfter` → `ReactNode`: Renders after the content if the content exists.
-
-`fallback` → `ReactNode`: Renders if no content exists.
-
----
+| Parameter      | Type      | Description                                      |
+| -------------- | --------- | ------------------------------------------------ |
+| `renderBefore` | ReactNode | Renders before the content if the content exists |
+| `renderAfter`  | ReactNode | Renders after the content if the content exists  |
+| `fallback`     | ReactNode | Renders if no content exists                     |
 
 🟦🟨
